@@ -1,0 +1,44 @@
+@import 'utilities.css';
+  
+  #form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--main-color);
+    margin-top: 10vh;
+    border-radius: 30px;
+  }
+  
+  #form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+    text-align: center;
+  }
+  
+  #form-container input[type="text"],
+  #form-container input[type="email"],
+  #form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+  }
+  
+  #form-container button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #006e92;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-top:10px;
+  }
+  
+  #form-container button[type="submit"]:hover {
+    background-color: rgb(34, 73, 102);
+  }
+  

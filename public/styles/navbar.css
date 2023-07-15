@@ -1,0 +1,42 @@
+@import 'utilities.css';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 10px;
+    color: var(--letter-color);
+  }
+  
+  .navbar-header {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 10px;
+  }
+  
+  .navbar-links li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: var(--letter-color);
+    padding: 5px 10px;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #006e92;
+    border-radius: 30px;
+  }
+  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/utilities.css">
+    <link rel="stylesheet" type="text/css" href="/styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="/styles/indexPage.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <header class="header-container">
+        <%- include('./partials/nav.ejs') %>
+    </header>
+    <div class="container">
+        <main id="main-content">
+          Welcome to ReadsNet, a dynamic application designed to revolutionize your reading 
+          experience and connect you with fellow book lovers. ReadsNet offers a comprehensive 
+          platform that combines personalized recommendations, social interactions, and reading 
+          goals to create an engaging community of readers.
+        </main>
+    </div>      
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

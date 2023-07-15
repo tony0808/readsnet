@@ -1,0 +1,20 @@
+@import 'utilities.css';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+  }
+  
+  #main-content {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: var(--letter-color);
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+ 
