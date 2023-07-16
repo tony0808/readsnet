@@ -12,7 +12,9 @@ const PORT = process.env.PORT || 5000;
 connectToDatabase();
 
 // Middleware
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.use(express.json());
 
 // Views directory
 app.set('views', './views');

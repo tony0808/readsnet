@@ -7,7 +7,8 @@ const userSchema = new mongoose.Schema({
     username:String,
     profile: {
         type: mongoose.Schema.Types.ObjectId,
-        ref:'profile'
+        ref:'profile',
+        default: null
     }
 }, {timestamps:true});
 
