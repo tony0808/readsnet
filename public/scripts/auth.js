@@ -19,3 +19,23 @@ function registerUser() {
     xhttp.send(jsonData);
     return false;
 }
+
+function loginUser() {
+    const xhttp = new XMLHttpRequest();
+    const formData = new FormData(document.getElementById("login-form"));
+    const obj = {};
+    formData.forEach((value, key) => (obj[key] = value));
+    const jsonData = JSON.stringify(obj);
+
+    xhttp.onreadystatechange = function () {
+        if (xhttp.readyState === 4) 
+            if (xhttp.status === 200) 
+                location.href = "/homepage";
+            else 
+                console.log(xhttp.responseText);
+    };
+    xhttp.open("POST", domain + "/auth/login");
+    xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    xhttp.send(jsonData);
+    return false;
+}

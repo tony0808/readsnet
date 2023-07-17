@@ -16,7 +16,7 @@
     <%- include('../partials/nav.ejs') %>
     </header>
     <div id="form-container">
-        <form id="login-form">
+        <form id="login-form" onsubmit="return loginUser();">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
     
@@ -27,5 +27,6 @@
         </form>
     </div> 
     <%- include('../partials/footer.ejs') %>
+    <script type="text/javascript" src="/scripts/auth.js"></script>
   </body>
   </html>
